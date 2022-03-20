@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> EXERCICIO 6</title>
+
+        <script>
+
+        // 6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+
+        var continua = true;
+        var mediageral = [];
+        var geral = [];
+            
+
+        while(continua){
+
+            var nota1 = parseInt(prompt("Digite um numero:"));
+            var nota2 = parseInt(prompt("Digite um numero:"));
+            var media = (nota1+nota2)/2;
+            
+            alert("A MEDIA FINAL DESSE ALUNO FOI:" + "\n" + (media))
+            geral.push(media)
+            
+            if (media >= 6) {
+                mediageral.push("<br/>APROVADO:" +  media + "")
+            }
+           
+            var outroAluno = String(prompt("DESEJA CALCULAR A MEDIA DE OUTRO ALUNO (S/N)?" + "\n" ));
+           
+            if(outroAluno == "N") {
+                continua = false;
+            }
+            
+        }
+
+        document.write("AS MEDIAS FORAM: <br/><br/> " + geral + "!!!");
+        document.write("<br/> <br/>AS MEDIAS APROVADAS FORAM: <br/> " + mediageral + ".");
+
+
+        </script>
+    </head>
+    
+    <body>
+        
+
+
+
+
+        
+    </body>
+
+
+
+</html>

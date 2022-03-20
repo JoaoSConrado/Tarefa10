@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> EXERCICIO 14</title>
+
+        <script>
+        
+        // 14 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão no intervalo [24,42] (incluindo os valores 24 e 42 no intervalo) e quantos deles estão fora deste intervalo.
+
+        var numerosEntre = [];
+        var numerosResto = [];
+
+            for (let i = 0; i < 10; i++) {
+                var num = parseFloat(prompt("Digite um valor"));
+                if (num >= 24 && num <= 42) {
+                    numerosEntre.push(num);
+                } else {
+                    numerosResto.push(num);
+                }
+        
+            }
+        
+        var tamanho1 = numerosEntre.length;
+        var tamanho2 = numerosResto.length;
+
+            document.write("A QUANTIDADE DE NUMEROS QUE ESTÃO NO INTERVALO É: " + tamanho1 + "." +"</br> </br> OS NUMEROS QUE ESTAO NO INTERVALO DE 24 a 42 E: " + numerosEntre + ".");
+            
+            document.write("</br><br/><br/>A QUANTIDADE DE NUMEROS QUE ESTÃO FORA DO INTERVALO É: " + tamanho2 + "." + "<br/> </br>OS NUMEROS QUE ESTÃO FORA DO INTERVALO É: " + numerosResto + ".");
+
+            
+
+           
+
+
+        
+
+
+        </script>
+    </head>
+    
+    <body>
+        
+
+
+
+
+        
+    </body>
+
+
+
+</html>

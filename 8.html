@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> EXERCICIO 8</title>
+
+        <script>
+        
+        // 8 - Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+
+        var avaliacao1 = parseFloat(prompt("Digite a nota da 1° Avaliação: "));
+
+        while (avaliacao1 > 10 || avaliacao1 < 0) {
+            avaliacao1 = parseFloat(prompt("Digite a nota da 1° Avaliação: "));
+        }
+
+        var avaliacao2 = parseFloat(prompt("Digite a nota da 2° Avaliação: "));
+
+        while (avaliacao2 > 10 || avaliacao2 < 0) {
+            avaliacao2 = parseFloat(prompt("Digite a nota da 2° Avaliação: "));
+        }
+
+        document.write("Média das avaliações: " + (avaliacao1+avaliacao2)/2);
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+    
+    <body>
+        
+
+
+
+
+        
+    </body>
+
+
+
+</html>
